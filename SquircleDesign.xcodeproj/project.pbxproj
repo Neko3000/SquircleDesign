@@ -13,6 +13,7 @@
 		14873D8C27DCABA0001C47B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14873D8A27DCABA0001C47B6 /* Main.storyboard */; };
 		14873D8E27DCABA4001C47B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14873D8D27DCABA4001C47B6 /* Assets.xcassets */; };
 		14873D9127DCABA4001C47B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14873D8F27DCABA4001C47B6 /* LaunchScreen.storyboard */; };
+		59A406F8A58304DDACE9813A /* Pods_SquircleDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD40F875BA5CD7AEE932867 /* Pods_SquircleDesign.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		14873D8D27DCABA4001C47B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14873D9027DCABA4001C47B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14873D9227DCABA4001C47B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B06678CCE05EE6352EA6C6 /* Pods-SquircleDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquircleDesign.release.xcconfig"; path = "Target Support Files/Pods-SquircleDesign/Pods-SquircleDesign.release.xcconfig"; sourceTree = "<group>"; };
+		5B6DF0D535DA7887EACFA035 /* Pods-SquircleDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquircleDesign.debug.xcconfig"; path = "Target Support Files/Pods-SquircleDesign/Pods-SquircleDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD40F875BA5CD7AEE932867 /* Pods_SquircleDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquircleDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A406F8A58304DDACE9813A /* Pods_SquircleDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				14873D8327DCABA0001C47B6 /* SquircleDesign */,
 				14873D8227DCABA0001C47B6 /* Products */,
+				F0E739383203DEE3FD9098A6 /* Pods */,
+				CEF161B8EA30E3BC66CE7D05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SquircleDesign;
 			sourceTree = "<group>";
 		};
+		CEF161B8EA30E3BC66CE7D05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD40F875BA5CD7AEE932867 /* Pods_SquircleDesign.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0E739383203DEE3FD9098A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B6DF0D535DA7887EACFA035 /* Pods-SquircleDesign.debug.xcconfig */,
+				46B06678CCE05EE6352EA6C6 /* Pods-SquircleDesign.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14873D9527DCABA4001C47B6 /* Build configuration list for PBXNativeTarget "SquircleDesign" */;
 			buildPhases = (
+				2A12D6528B011AA48E77A376 /* [CP] Check Pods Manifest.lock */,
 				14873D7D27DCABA0001C47B6 /* Sources */,
 				14873D7E27DCABA0001C47B6 /* Frameworks */,
 				14873D7F27DCABA0001C47B6 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A12D6528B011AA48E77A376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquircleDesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14873D7D27DCABA0001C47B6 /* Sources */ = {
@@ -284,6 +335,7 @@
 		};
 		14873D9627DCABA4001C47B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B6DF0D535DA7887EACFA035 /* Pods-SquircleDesign.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +364,7 @@
 		};
 		14873D9727DCABA4001C47B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B06678CCE05EE6352EA6C6 /* Pods-SquircleDesign.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
