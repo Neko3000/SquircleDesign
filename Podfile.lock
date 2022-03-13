@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 53ab7a6be9ebd6443cc4c7d55b89a06467db820f
+PODS:
+  - Squircle (2.2.0)
+
+DEPENDENCIES:
+  - Squircle
+
+SPEC REPOS:
+  trunk:
+    - Squircle
+
+SPEC CHECKSUMS:
+  Squircle: 94bae5770fc84e16b8cf66f3630a563b39ee2544
+
+PODFILE CHECKSUM: 4b7d911fcffc56dd45dbfcf756b6b76688f3a6cb
 
 COCOAPODS: 1.11.2

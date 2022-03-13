@@ -6,5 +6,6 @@ target 'SquircleDesign' do
   use_frameworks!
 
   # Pods for SquircleDesign
+  pod 'Squircle'
 
 end
